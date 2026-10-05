@@ -25,7 +25,7 @@
     <main>
         <section>
             <h1>Entrar em contato conosco</h1>
-                <p>Número: (11) 946140196 Yolanda - (11)953717544 Mirian  </p>
+                <p>Número: (11) 946140196 Yolanda - (11) 953717544 Mirian  </p>
                 <p>E-mail: amilvasociacaodemulheres@gmail.com</p>
                 <p>Endereço:<a href="https://maps.app.goo.gl/UcTqp6w3tfy1aEPr6">R. Cabral de Ataíde, 729 - Vila Yolanda.</a></p>
                 <br>
@@ -38,6 +38,30 @@
             <h2>Apoio e parceria</h2>
             <p>Instituições, voluntários e apoiadores podem colaborar de diferentes formas, fortalecendo ações de acolhimento, orientação e mobilização comunitária.</p>
         </article>
+        <section>
+            <h2>Envie sua mensagem</h2>
+            <form action="mailto:amilvasociacaodemulheres@gmail.com" method="post" enctype="text/plain">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefone">Telefone (opcional):</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(11) 90000-0000">
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione...</option>
+                    <option value="doacao">Quero doar</option>
+                    <option value="voluntariado">Quero ser voluntária(o)</option>
+                    <option value="parceria">Parceria institucional</option>
+                    <option value="projetos">Conhecer os projetos</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </section>
+    </main>
     </main>
     <footer class="rodape-site">
         <p>&copy; 2026 Associação de Mulheres Imigrantes Luz y Vida. Todos os direitos reservados.</p>
