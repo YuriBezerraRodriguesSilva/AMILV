@@ -10,6 +10,16 @@
   --branco: #FFFFFF;
 }
 
+body {
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
     align-items: center;
     background-color: var(--verde-claro);
@@ -42,6 +52,7 @@ header {
     display: block;
     padding: 0.65rem 0.85rem;
     text-decoration: none;
+    transition: background-color 160ms ease, color 160ms ease;
 }
 
 .menu > a,
@@ -57,6 +68,24 @@ header {
 .menupagina a:focus-visible {
     background-color: var(--azul-claro);
     color: var(--azul-escuro);
+}
+
+.menu > a[aria-current="page"],
+.menu .secao:has(.menupagina a[aria-current="page"]) > summary,
+.menupagina a[aria-current="page"] {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    font-weight: 700;
+}
+
+.menu > a[aria-current="page"]:hover,
+.menu > a[aria-current="page"]:focus-visible,
+.menu .secao:has(.menupagina a[aria-current="page"]) > summary:hover,
+.menu .secao:has(.menupagina a[aria-current="page"]) > summary:focus-visible,
+.menupagina a[aria-current="page"]:hover,
+.menupagina a[aria-current="page"]:focus-visible {
+    background-color: var(--verde);
+    color: var(--branco);
 }
 
 .menu .secao {
@@ -93,6 +122,67 @@ section.secao {
     margin: 2rem auto;
     max-width: 70rem;
     padding: clamp(1rem, 4vw, 2.5rem);
+}
+
+.parceiros {
+    margin: 2rem auto;
+    max-width: 75rem;
+    padding: 0 clamp(1rem, 4vw, 2.5rem);
+}
+
+.parceiros-intro {
+    color: var(--cinza);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    max-width: 48rem;
+}
+
+.parceiros-grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+}
+
+.parceiro-card {
+    background-color: var(--branco);
+    border: 1px solid var(--azul-claro);
+    border-radius: 0.75rem;
+    box-shadow: 0 0.35rem 1rem color-mix(in srgb, var(--preto) 8%, transparent);
+    overflow: hidden;
+    padding: 1.25rem;
+}
+
+.parceiro-card img {
+    background-color: var(--branco);
+    height: 9rem;
+    object-fit: contain;
+    width: 100%;
+}
+
+.parceiro-card h2 {
+    color: var(--verde-escuro);
+    font-size: 1.2rem;
+    line-height: 1.35;
+    margin: 1rem 0 0.5rem;
+}
+
+.parceiro-card p {
+    color: var(--cinza);
+    line-height: 1.6;
+    margin: 0;
+}
+
+footer {
+    background-color: var(--verde-claro);
+    border-top: 1px solid var(--verde);
+    color: var(--verde-escuro);
+    line-height: 1.6;
+    padding: 1.5rem clamp(1rem, 5vw, 4rem);
+    text-align: center;
+}
+
+footer p {
+    margin: 0.35rem 0;
 }
 
 @media (max-width: 40rem) {

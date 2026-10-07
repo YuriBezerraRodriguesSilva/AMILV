@@ -11,7 +11,7 @@
         <a href="../../index.html" class="menulogo">AMILV</a>
         <nav class="menu">
             <a href="../../index.html">Início</a>
-            <details class="secao">
+            <details class="secao" name="menu">
                 <summary>Conheça a AMILV</summary>
                 <div class="menupagina">
                     <a href="sobre.html">Sobre</a>
@@ -19,15 +19,15 @@
                     <a href="atuacao.html">Nossa atuação</a>
                 </div>
             </details>
-            <details class="secao">
+            <details class="secao" name="menu">
                 <summary>Nossas ações</summary>
                 <div class="menupagina">
                     <a href="projetos.html">Projetos</a>
                     <a href="eventos.html">Eventos</a>
-                    <a href="parceiras.html">Parcerias</a>
+                    <a href="parceiras.html" aria-current="page">Parcerias</a>
                 </div>
             </details>
-            <details class="secao">
+            <details class="secao" name="menu">
                 <summary>Participe</summary>
                 <div class="menupagina">
                     <a href="ajudar.html">Como ajudar</a>
@@ -37,37 +37,53 @@
             </details>
         </nav>
     </header>
-    <main> 
-        <ul>
-            <h2>Realização de mutirões comunitários de atendimento e orientação social. Parcerias institucionais:</h2>
-            <li>SEBRAE</li>
-            <br>
-            <li>SENAI</li>
-            <br>
-            <li>CDHIC</li>
-            <br>
-            <li>ADUS</li>
-            <br>
-            <li>liROMIGA</li>
-            <br>
-            <li>Defensora liública de União (DliU)</li>
-            <br>
-            <li>CRAS</li>
-            <br>
-            <li>CRAI</li>
-            <br>
-            <li>Cruz Vermelho</li>
-            <br>
-            <li>Médicos da Amazônia</li>
-        </ul>
-        <article>
-            <h2>Parcerias que ampliam o acolhimento</h2>
-            <p>As instituições parceiras ajudam a ampliar o alcance das ações da AMILV, trazendo suporte em saúde, educação, documentação e atendimento comunitário.</p>
-        </article>
-        <article>
-            <h2>Rede de solidariedade</h2>
-            <p>O trabalho da associação ganha força quando organizações e pessoas se conectam em torno de soluções práticas para fortalecer a vida e a dignidade de mulheres imigrantes.</p>
-        </article>
+    <main>
+        <section class="parceiros">
+            <h1>Parcerias institucionais</h1>
+            <p class="parceiros-intro">Conheça algumas das instituições que contribuem para ampliar o acesso à formação, à assistência e à garantia de direitos.</p>
+            <div class="parceiros-grid">
+                <article class="parceiro-card">
+                    <img src="../Assets/ImagensParceiros/sebrae.jpg" alt="Logo do SEBRAE">
+                    <h2>SEBRAE</h2>
+                    <p>O Serviço Brasileiro de Apoio às Micro e Pequenas Empresas incentiva o empreendedorismo e oferece orientação e capacitação para quem deseja criar ou desenvolver um pequeno negócio.</p>
+                </article>
+                <article class="parceiro-card">
+                    <img src="../Assets/ImagensParceiros/senai.png" alt="Logo do SENAI">
+                    <h2>SENAI</h2>
+                    <p>O Serviço Nacional de Aprendizagem Industrial promove educação profissional e cursos de qualificação, preparando pessoas para atuar em diferentes áreas da indústria.</p>
+                </article>
+                <article class="parceiro-card">
+                    <img src="../Assets/ImagensParceiros/CDHIC.jpg" alt="Logo do CDHIC">
+                    <h2>CDHIC</h2>
+                    <p>O Centro de Direitos Humanos e Cidadania do Imigrante atua na promoção dos direitos humanos e da cidadania de pessoas migrantes e suas famílias.</p>
+                </article>
+                <article class="parceiro-card">
+                    <img src="../Assets/ImagensParceiros/ADUS.jpg" alt="Logo do ADUS">
+                    <h2>ADUS</h2>
+                    <p>O Instituto de Reintegração do Refugiado — ADUS — trabalha para apoiar a integração de pessoas refugiadas no Brasil, promovendo acolhimento e inclusão social.</p>
+                </article>
+                <article class="parceiro-card">
+                    <img src="../Assets/ImagensParceiros/DPU.jpg" alt="Logo da Defensoria Pública da União">
+                    <h2>Defensoria Pública da União (DPU)</h2>
+                    <p>A DPU presta assistência jurídica gratuita em casos de competência federal e atua na defesa dos direitos de pessoas que não podem pagar por um advogado.</p>
+                </article>
+                <article class="parceiro-card">
+                    <img src="../Assets/ImagensParceiros/cras.jpg" alt="Identidade visual do CRAS">
+                    <h2>CRAS</h2>
+                    <p>O Centro de Referência de Assistência Social é uma unidade pública que oferece proteção social básica, orientação e acesso a serviços e benefícios socioassistenciais.</p>
+                </article>
+                <article class="parceiro-card">
+                    <img src="../Assets/ImagensParceiros/crai.jpg" alt="Identidade visual do CRAI">
+                    <h2>CRAI</h2>
+                    <p>O Centro de Referência e Atendimento para Imigrantes oferece orientação e atendimento a pessoas imigrantes, facilitando o acesso a direitos, documentação e serviços públicos.</p>
+                </article>
+                <article class="parceiro-card">
+                    <img src="../Assets/ImagensParceiros/cruzvermelha.png" alt="Emblema da Cruz Vermelha">
+                    <h2>Cruz Vermelha</h2>
+                    <p>O Movimento Internacional da Cruz Vermelha e do Crescente Vermelho presta assistência humanitária e ajuda a proteger a vida e a dignidade de pessoas afetadas por crises.</p>
+                </article>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2026 Associação de Mulheres Imigrantes Luz y Vida. Todos os direitos reservados.</p>
