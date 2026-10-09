@@ -2,16 +2,18 @@
   --verde: #7FA03F;
   --verde-escuro: #5C7A2B;
   --verde-claro: #E8F0D9;
-  --azul: #7BA7C2;
-  --azul-escuro: #4F7F9C;
-  --azul-claro: #E3EEF5;
+  --azul: #62a3cc;
+  --azul-escuro: #426d88;
+  --azul-claro: #d8ecff;
   --preto: #1A1A1A;
   --cinza: #5A5A5A;
   --branco: #FFFFFF;
+  --background: #e4e4e4;;
 }
 
 body {
   margin: 0;
+  background-color: var(--background);
 }
 
 * {
@@ -173,16 +175,28 @@ section.secao {
 }
 
 footer {
-    background-color: var(--verde-claro);
-    border-top: 1px solid var(--verde);
-    color: var(--verde-escuro);
+    background-color: var(--preto);
+    color: var(--branco);
     line-height: 1.6;
-    padding: 1.5rem clamp(1rem, 5vw, 4rem);
+    padding: 0;
+    margin: 0;
     text-align: center;
 }
 
-footer p {
-    margin: 0.35rem 0;
+.rodape-alto {
+    background-image: linear-gradient(to top, var(--azul-escuro), var(--azul));
+    padding: 1.5rem clamp(1rem, 5vw, 4rem);
+}
+.rodape-baixo {
+    background-color: var(--preto);
+    padding: 0.4rem clamp(1rem, 5vw, 4rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape-baixo p {
+    margin: 0;
 }
 
 @media (max-width: 40rem) {
