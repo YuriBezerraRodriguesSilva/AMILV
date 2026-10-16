@@ -2,6 +2,7 @@
   --verde: #7FA03F;
   --verde-escuro: #5C7A2B;
   --verde-claro: #E8F0D9;
+  --verde-rodape: #4b7a04;
   --azul: #62a3cc;
   --azul-escuro: #426d88;
   --azul-claro: #d8ecff;
@@ -30,6 +31,7 @@ header {
     gap: 1rem 2rem;
     justify-content: space-between;
     padding: 1rem clamp(1rem, 5vw, 4rem);
+    border-bottom: 1px solid var(--verde-rodape);
 }
 
 .menulogo {
@@ -68,8 +70,8 @@ header {
 .menu summary:focus-visible,
 .menupagina a:hover,
 .menupagina a:focus-visible {
-    background-color: var(--azul-claro);
-    color: var(--azul-escuro);
+    background-color: #58ad5f;
+    color: var(--preto);
 }
 
 .menu > a[aria-current="page"],
@@ -184,8 +186,23 @@ footer {
 }
 
 .rodape-alto {
-    background-image: linear-gradient(to top, var(--azul-escuro), var(--azul));
-    padding: 1.5rem clamp(1rem, 5vw, 4rem);
+    background-image: linear-gradient(
+        to top,
+        color-mix(in srgb, var(--verde-escuro) 60%, white),
+        var(--verde-claro)
+    );
+    border-top: 1px solid var(--verde-rodape);
+    padding: 1rem clamp(1rem, 5vw, 4rem);
+
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.rodape-alto h3 {
+    grid-column: 1 / -1;                
 }
 .rodape-baixo {
     background-color: var(--preto);
@@ -195,8 +212,27 @@ footer {
     justify-content: center;
 }
 
+.icones {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.icones img {
+    display: block;
+}
+
+.rodape-texto {
+    color: var(--verde-escuro);
+    font-family: 'Loretto';
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
 .rodape-baixo p {
     margin: 0;
+    color: var(--branco);
 }
 
 @media (max-width: 40rem) {
